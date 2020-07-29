@@ -1,0 +1,3 @@
+webtest/obj/*
+webtest/Properties/launchSettings.json
+.vscode/*
