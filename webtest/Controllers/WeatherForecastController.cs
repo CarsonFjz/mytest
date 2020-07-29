@@ -17,15 +17,18 @@ namespace webtest.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IList<string> _lister;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IList<string> lister)
         {
             _logger = logger;
+            _lister = lister;
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
