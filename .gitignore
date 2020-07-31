@@ -2,3 +2,4 @@ webtest/obj/*
 webtest/Properties/launchSettings.json
 .vscode/*
 webtest/bin/*
+.DS_Store
